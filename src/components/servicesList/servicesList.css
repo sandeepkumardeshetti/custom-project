@@ -1,0 +1,19 @@
+
+.services-list-home{
+    list-style: none;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+.services-list-home li{
+    width: min(20rem, 100%);
+}
+
+.services-list-home li h2{
+    margin-bottom: 1rem;
+}

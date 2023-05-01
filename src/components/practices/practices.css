@@ -1,0 +1,47 @@
+
+.practices{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.practices-title-descrption{
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+    .practices-title-descrption{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.practices-title{
+    font-weight: 700;
+    color: var(--blue-color);
+    margin-bottom: .5rem;
+}
+
+.practices-description{
+    color: var(--gray-color);
+}
+
+.practices-cards-con{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+
+.practices button{
+    padding: 8px 24px;
+    outline: none;
+    background: transparent;
+    /* border: 2px solid var(--gray-color); */
+    border: 2px solid #000;
+    border-radius: 5px;
+}

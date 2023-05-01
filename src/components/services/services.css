@@ -1,0 +1,28 @@
+
+
+.services-home{
+    text-align: center;
+    background-color: var(--blue-color);
+    padding: 2rem;
+}
+
+.services-home h1, h2{
+    font-weight: 700;
+    color: var(--theme-color);
+}
+
+.services-home p{
+    color: #fff;
+}
+
+.services-home .title-desc{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+@media  screen and (min-width:50em){
+    .services-home .title-desc{
+        width: 60%;
+    }
+}

@@ -1,0 +1,47 @@
+
+.footer{
+  background-color:   #f1f1f1; 
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-text{
+    width: 100%;
+}
+
+@media screen and (min-width: 40em){
+    .logo-text{
+       
+    width: max(33%, 250px);
+
+    }
+}
+
+.logo-text h1{
+    color: var(--theme-color);
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+
+p{
+    color : var(--main-color);
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.social-links{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+    
+}
+
+@media screen and (min-width: 33em){
+    .social-links{
+       
+        flex-direction: column;
+    }
+}
