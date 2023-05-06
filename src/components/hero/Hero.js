@@ -1,13 +1,29 @@
+
+import { Link } from 'react-router-dom'
+import { motion} from 'framer-motion'
+import {AnimationOnScroll} from '../onScrollAnimation/OnScrollAnimation'
 import './hero.css'
 
-export const Hero = () => {
+
+ const Hero = ({heroData}) => {
+  const {ref, animation} = AnimationOnScroll()
+
   return (
-    <div className='hero' >
-        <h1 className='heading' >Safe and Reliable
-    Logistics Solutions</h1>
-    <h3 className='heading-2' >Going the extra mile for you</h3>
-    <p className='paragraph' >A 21st-century logistics company delivering 21st-century solutions. Finlor Logistics provide end-to-end supply chain solutions and last-mile delivery capabilities in the retail, hi-tech and logistics sectors. You can rely on us for all your delivery and transport requirements. With unrivalled customer service, we can tailor a solution that perfectly fits your needs.</p>
-    <button>CONTACT US</button>
+    <div ref={ref} className='hero' >
+    <motion.h1  animate={animation} className='heading' >{heroData.title}</motion.h1>
+    <motion.h3  animate={animation} transition={{duration : 4}} className='heading-2' >{heroData.subtitle}</motion.h3>
+    <motion.p animate={animation} transition={{duration : 5}} className='paragraph' >{heroData.description}</motion.p>
+    
+      {heroData.button === "View our services" ?
+    (<Link to='/services'  >
+    <button className='hero-button' >{heroData.button}</button>
+    </Link>) :
+    (<Link to='/contact'  >
+    <button  className='hero-button' >{heroData.button}</button>
+    </Link>)}
+   
     </div>
   )
 }
+
+export default Hero

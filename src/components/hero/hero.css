@@ -3,24 +3,34 @@
 .hero{
     background-image: url(hero-img.jpg);
     background-color: rgb(21, 19, 19);
-    min-height: 80vh;
+    min-height: 50vh;
     padding: 2rem;
     background-size: cover;
+    padding-top: 3rem;
     
 }
 
 .heading{
-    font-size: clamp(1rem, 10vw + 1rem, 5rem);
+    font-size: 2rem;
+    font-size: clamp(1rem, 6vw + .6rem, 5rem);
     line-height: 1.1;
     margin-bottom: .5rem;
+    margin-top: 2.3rem;
     color: #fff;
     font-family: var(--ff-primary);
 }
 @media (min-width: 50em){
     .heading{
-        width: 65%;
+        width: 75%;
     }
 }
+
+@media (min-width: 87em){
+    .heading{
+        width: 60%;
+    }
+}
+
 
 
 
@@ -51,7 +61,7 @@
     }
 }
 
-.hero > :last-child{
+.hero-button{
     padding: 8px 16px;
     background-color: var(--theme-color);
     border-radius: 5px;
@@ -59,5 +69,5 @@
     border: none;
     font-size: 20px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
 }

@@ -1,0 +1,70 @@
+
+
+
+.history-main-heading{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.company-values{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--blue-color);
+}
+
+.company-values .title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.company-values .quote{
+    margin: 1.2rem 0;
+    color: #fff;
+}
+
+.company-values p{
+    color: #fff;
+}
+
+.family{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.family-title-descrption{
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+    .family-title-descrption{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.family-title{
+    font-weight: 700;
+    color: var(--blue-color);
+    margin-bottom: .5rem;
+}
+
+.family-description{
+    color: var(--gray-color);
+}
+
+.family-cards-con{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2em;
+    padding: 2rem;
+}
+
+

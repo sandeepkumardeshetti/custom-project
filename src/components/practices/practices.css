@@ -39,6 +39,7 @@
 
 .practices button{
     padding: 8px 24px;
+    color: green;
     outline: none;
     background: transparent;
     /* border: 2px solid var(--gray-color); */

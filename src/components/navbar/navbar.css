@@ -1,13 +1,13 @@
 
 
 
-:root{
+/* :root{
     
     --mainColor : #29335c;
     --mainColorLight : #6271ad;
     --secondaryColor : #DB2B39;
     --textColor : #eee;
-}
+} */
 
 
 
@@ -16,16 +16,22 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 2rem;
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
     /* background-color: #001b71; */
-    color: var(--textColor);
+    color: #eee;
     margin-top: 0 !important;
+    position: absolute;
+    width: 100%;
     
 
 }
 
-.header h1 span{
-    color: rgb(12, 219, 109);
+
+
+.quantum-logo{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
 }
 
 nav{
@@ -39,13 +45,25 @@ nav{
     gap: 3rem;
     align-items: center;
     justify-content: center;
-    background-color: var(--mainColor);
+    background-color: #29335c;
     transition: 1s;
     transform: translateY(-100vh);
+    z-index: 1;
 }
 
 header .responsive_nav{
     transform: none;
+}
+.header nav a,button{
+    font-weight: 600;
+    /* color: rgb(43, 186, 226); */
+    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.1vw + 0.6rem, 2.4rem);
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem;
 }
 
 h1{
@@ -57,24 +75,16 @@ h1{
 }
 
 a{
-    text-decoration: none;
-    font-weight: 600;
-    /* color: rgb(43, 186, 226); */
-    color: #fff;
-    background: transparent;
-    
-   
+    text-decoration: none;   
 }
 
 header .nav-btn {
-    
     padding: 6px;
-    
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
-    color: var(--textColor);
+    color: #eee;
     
 }
 
@@ -87,16 +97,12 @@ nav .nav-close-btn {
 
 
 
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 50em) {
     .header{
         height: 80px;
         width: 100%;
-        
-        /* max-width: 1024px; */
-        
     }
-    
-    
+
     
     nav{
         display: flex;
@@ -109,7 +115,7 @@ nav .nav-close-btn {
         gap: 3rem;
         height: auto;
         justify-content: center;
-        background-color: var(--mainColor);
+        background-color: transparent;
         transform: none;
     }
     header .nav-btn{
@@ -120,3 +126,9 @@ nav .nav-close-btn {
 
 }
 
+
+nav a.active{
+    border-bottom: 2px solid green !important ;
+    color: green ;
+    font-weight: 800;
+}

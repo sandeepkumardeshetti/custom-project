@@ -1,0 +1,48 @@
+
+
+.text-image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.text-container h2{
+    font-weight: 700;
+    font-size: 2rem;
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 70em) {
+    .text-image{
+        margin-top: 0;
+    }
+    .text-container{
+        flex-basis: 45%;
+    }
+    .order-right{
+        order: 1;
+    }
+}
+
+.text-container p{
+    line-height: 2;
+}
+.text-image img{
+    width: min(35rem, 100%);
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+    flex-basis: 100%;
+}
+@media screen and (min-width: 64em) {
+    .text-image img{
+        flex-basis: 45%;
+    }
+}
+
+.m-top-2{
+    margin-top: 2rem;
+}

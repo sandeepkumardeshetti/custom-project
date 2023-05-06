@@ -12,12 +12,10 @@ export const Footer = () => {
         </div>
         <div className='footer-links-con' >
             <h2>Quick Links</h2>
-            <p>About Us</p>
+            <p>Home</p>
             <p>Services</p>
-            <p>Work with Us</p>
-            <p>Sustainability</p>
-            <p>Blog</p>
-            <p>Contact</p>
+            <p>About Us</p>
+            <p>Contact Us</p>
 
         </div>
         <div className='footer-links-con' >
@@ -29,9 +27,9 @@ export const Footer = () => {
         <div className='footer-links-con ' >
             <h2>Socials</h2>
             <div className='social-links' >
-            <FaFacebookSquare size={30} />
-            <FiInstagram size={30} />
-            <BsYoutube size={30} />
+            <FaFacebookSquare color='#fff' size={30} />
+            <FiInstagram color='#fff' size={30} />
+            <BsYoutube color='#fff' size={30} />
             </div>
             
             

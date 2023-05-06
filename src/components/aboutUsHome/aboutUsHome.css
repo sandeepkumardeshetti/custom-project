@@ -1,0 +1,29 @@
+
+.about-us-home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-home-text-con h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 70em) {
+    .about-us-home-text-con{
+        flex-basis: 45%;
+    }
+}
+
+.about-us-home-text-con p{
+    line-height: 2;
+}
+.about-us-home img{
+    width: min(35rem, 100%);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
